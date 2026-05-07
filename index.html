@@ -1,146 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Recipe Book</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fff8f0;
-    }
-    header {
-      background: #ff7043;
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav {
-      background: #ffab91;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .recipe {
-      background: white;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .recipe img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 8px 12px;
-      background: #ff7043;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Secure on Coinbase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #333;
+        }
+        header {
+            background: #0052ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0052ff;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            background: #eaeaea;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #0052ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>🍲 My Recipe Book</h1>
-  <p>Delicious recipes made simple</p>
+    <h1>Protect Your Coinbase Account</h1>
+    <p>Learn how to stay safe from unauthorized transactions</p>
 </header>
 
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Recipes</a>
-  <a href="#">Contact</a>
-</nav>
-
-<!-- Floating Call Button -->
-<button class="call-btn" onclick="openPopup()">
-  📞 Call Now
-</button>
-
-<!-- Popup -->
-<div id="callPopup" class="popup">
-  <div class="popup-content">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <h2>Need Help?</h2>
-    <p>Call us now for recipe support and cooking tips!</p>
-
-    <!-- Replace with your phone number -->
-    <a href="tel:+1234567890" class="call-link">
-      📞 +1 234 567 890
-    </a>
-  </div>
-</div>
-
-<script>
-  function openPopup() {
-    document.getElementById("callPopup").style.display = "block";
-  }
-
-  function closePopup() {
-    document.getElementById("callPopup").style.display = "none";
-  }
-
-  // Close popup when clicking outside
-  window.onclick = function(event) {
-    const popup = document.getElementById("callPopup");
-
-    if (event.target == popup) {
-      popup.style.display = "none";
-    }
-  }
-</script>
-  
 <div class="container">
 
-  <div class="recipe">
-    <h2>Spaghetti Pasta +1-844-312-1328 </h2>
-    <img src="https://via.placeholder.com/800x400" alt="Pasta">
-    <p><strong>Ingredients:</strong> Pasta, tomato sauce, garlic, olive oil, herbs</p>
-    <p><strong>Instructions:</strong> Boil pasta, prepare sauce, mix together, and serve hot.</p>
-    <a href="#" class="btn">View Full Recipe</a>
-  </div>
+    <div class="card">
+        <h2>🔐 Enable Two-Factor Authentication (2FA)</h2>
+        <p>Always enable 2FA using apps like Google Authenticator or Authy to add an extra layer of security.</p>
+    </div>
 
-  <div class="recipe">
-    <h2>Vegetable Salad</h2>
-    <img src="https://via.placeholder.com/800x400" alt="Salad">
-    <p><strong>Ingredients:</strong> Lettuce, cucumber, tomato, dressing</p>
-    <p><strong>Instructions:</strong> Chop vegetables, mix, add dressing, and toss well.</p>
-    <a href="#" class="btn">View Full Recipe</a>
-  </div>
+    <div class="card">
+        <h2>📧 Use a Strong Email Password</h2>
+        <p>Your email is the gateway to your account. Make sure it has a strong, unique password and 2FA enabled.</p>
+    </div>
 
-  <div class="recipe">
-    <h2>Chocolate Cake</h2>
-    <img src="https://via.placeholder.com/800x400" alt="Cake">
-    <p><strong>Ingredients:</strong> Flour, cocoa powder, sugar, eggs, butter</p>
-    <p><strong>Instructions:</strong> Mix ingredients, bake at 180°C for 30 minutes.</p>
-    <a href="#" class="btn">View Full Recipe</a>
-  </div>
+    <div class="card">
+        <h2>🚫 Beware of Phishing Scams</h2>
+        <p>Never click suspicious links or share your login details. Always verify emails and websites before entering credentials.</p>
+    </div>
+
+    <div class="card">
+        <h2>💻 Secure Your Device</h2>
+        <p>Keep your phone and computer updated with antivirus software and avoid using public Wi-Fi for transactions.</p>
+    </div>
+
+    <div class="card">
+        <h2>🔎 Monitor Account Activity</h2>
+        <p>Regularly check your account for any unusual activity and enable notifications for logins and transactions.</p>
+    </div>
+
+    <div class="card">
+        <h2>🛑 What To Do If You Notice Unauthorized Activity</h2>
+        <ul>
+            <li>Immediately change your password</li>
+            <li>Disable withdrawals if possible</li>
+            <li>Contact Coinbase support</li>
+            <li>Check linked bank accounts</li>
+        </ul>
+    </div>
+
+    <div class="card" style="text-align:center;">
+        <h2>Stay Alert, Stay Secure</h2>
+        <p>Your security is in your hands. Take action today to protect your crypto assets.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
 
 </div>
 
 <footer>
-  <p>© 2026 My Recipe Book | Made with ❤️</p>
+    <p>© 2026 Security Awareness | This is an informational page only</p>
 </footer>
 
 </body>
