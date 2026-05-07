@@ -105,5 +105,43 @@
   <p>© 2026 My Recipe Book | Made with ❤️</p>
 </footer>
 
+<!-- Floating Call Button -->
+<button class="call-btn" onclick="openPopup()">
+  📞 Call Now
+</button>
+
+<!-- Popup -->
+<div id="callPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Need Help?</h2>
+    <p>Call us now for recipe support and cooking tips!</p>
+
+    <!-- Replace with your phone number -->
+    <a href="tel:+1234567890" class="call-link">
+      📞 +1 234 567 890
+    </a>
+  </div>
+</div>
+
+<script>
+  function openPopup() {
+    document.getElementById("callPopup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("callPopup").style.display = "none";
+  }
+
+  // Close popup when clicking outside
+  window.onclick = function(event) {
+    const popup = document.getElementById("callPopup");
+
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+  
 </body>
 </html>
